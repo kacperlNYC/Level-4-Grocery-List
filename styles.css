@@ -10,6 +10,8 @@ header {
 main {
     margin: auto;
     max-width: 800px;
+    text-align: center;
+
 }
 
 #list {
@@ -28,4 +30,11 @@ main {
 
 #item #name {
     font-size: 25px;
+}
+
+#add {
+    margin-top: 10px;
+    width: 75%;
+    font-size: 25px;
+    border-radius: 10px;
 }
