@@ -67,6 +67,8 @@ function add() {
         items[index]["quantity"] = newAmount;
     }
 
+    document.forms["form"]["name"].value = "";
+    document.forms["form"]["amount"].value = "1";
     hide();
     display();
 }
@@ -84,9 +86,10 @@ function display() {
     for (let i in items)
     {
         let item = items[i];
+        let num = Number(i) + 1;
         listOut.innerHTML += `
         <div class='item'>
-            <div class='name'>${item["name"]}</div>
+            <div class='name'>${num}.     ${item["name"]}</div>
             <div class='group'>
                 <div class='quantity'>${item["quantity"]}x</div>
                 <div>
